@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-12 chatTitle">
+        <h3 class="argueThis">Argument Topic of the Day: <span class="argueMe"> "Could Aaron be Parker's father?"</span> </h3>
+    </div>
+    <h3 class="col-xs-12 chatAnger">Room of Anger</h3>
+</div>
+
+<div class="row chatBackground ">
+    <div class="col-xs-12 ">
+            <ul class=>
+                <li ng-repeat="message in messages track by $index" ng-class="{'first': $first}">
+                <strong class="theUsername">{{message.username}}:</strong><span> {{message.message}}</span>
+                </li>
+            </ul>
+    </div>
+
+</div>
+<div class="row">
+    <div class="theMessage">
+        <form>
+            <input class="col-xs-8" ng-model="newMessage" type="text" maxlength="75"> <button class=" powerButton col-xs-4 btn" ng-click="sendMessage(newMessage); moveToLast()">send</button>
+        </form>
+    </div>
+</div>
+
+
