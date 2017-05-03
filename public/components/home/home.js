@@ -2,7 +2,8 @@ var app = angular.module("TodoApp");
 
 app.controller("homeController", ['$rootScope','$scope', 'UserService', "$location", function($rootScope, $scope, UserService, $location){
 
-    var socket = window.io('localhost:5000/');
+    // var socket = window.io('localhost:5000/');
+    var socket = window.io('/');
     $scope.newMessage = undefined;
     $scope.messages = [];
     $scope.lastOne = "";
