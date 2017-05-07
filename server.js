@@ -10,7 +10,7 @@ var io = require("socket.io")(http);
 
 
 var expressJwt = require("express-jwt")
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 6000;
 
 app.use(morgan("dev"));
 app.use(bodyParser.json());
